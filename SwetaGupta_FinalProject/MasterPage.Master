@@ -1,0 +1,161 @@
+﻿<%--  
+    Final Project - Fashion Merchandising Site
+    Date Started - 13th July 2018
+    Created By - Sweta Gupta (8252397)    
+--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SwetaGupta_FinalProject.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Fashion Hub - Fashion Merchandising Site  - Final Project of ASP.NET</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="Content/font-awesome.min.css" rel="stylesheet" />
+        <link href="Content/skel.css" rel="stylesheet" />
+        <link href="Content/animate.css" rel="stylesheet" />
+        <link href="Content/custom-css.css" rel="stylesheet" />
+
+        <%--<script src="Scripts/jquery-3.0.0.min.js"></script>--%>
+        <script src="Scripts/jquery.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/jquery.dropotron.min.js"></script>
+        <script src="Scripts/skel.min.js"></script>
+        <script src="Scripts/skel-layers.min.js"></script>
+        <script src="Scripts/init.js"></script>
+        <script src="Scripts/custom-js.js"></script>
+
+        <link rel="shortcut icon" href="Images/logo.PNG">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body class="homepage">
+    
+          <form id="form1" runat="server">
+               <asp:ContentPlaceHolder ID="header1" runat="server">
+          <!-- Header -->
+			<div id="header">
+				<div class="container">
+						
+					<!-- Logo -->
+						<h1><a href="#" id="logo"><img src="Images/logo.PNG" alt="Fashion Hub" /></a></h1>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/Home"><i class="fa fa-home"></i> Home</a></li>
+                                <li><a href="/About"><i class="fa fa-smile-o"></i> About</a></li>
+								<li>
+									<a href="#"><i class="fa fa-shopping-cart"></i> Shop <i class="fa fa-caret-down"></i></a>
+									<ul>
+										<li><a href="/Dresses"><i class="fa fa-check"></i> Dresses</a></li>
+										<li><a href="/Tops"><i class="fa fa-check"></i> Tops</a></li>
+										<li><a href="/Bottoms"><i class="fa fa-check"></i> Bottoms</a></li>
+									</ul>
+								</li>
+								<li><a href="/Contact"><i class="fa fa-phone"></i> Contact</a></li>
+                                <li>
+									<a href="#"><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></a>
+									<ul>
+										<li><a href="/Login"><i class="fa fa-user"></i> Login</a></li>
+                                        <li><a href="/Login?action=logout"><i class="fa fa-backward"></i> LogOut</a></li>
+                                        <li><a href="/Cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                                        <li><a href="/Admin"><i class="fa fa-edit"></i> Admin</a></li>
+									</ul>
+								</li>
+
+                                
+
+							</ul>
+						</nav>
+
+
+					<!-- Banner -->
+						<div id="banner">
+							<div class="container">
+								<section>
+									<header class="major">
+										<h2>Welcome to Fashion Hub!</h2>
+										<span class="byline">An online store for women.. where you can find all you are looking for.. wide range of dresses and tops and bottoms.. and alot more of accessories.. all for best price and amazing quality! Log in now to get more discount on your first pruchase <i class="fa fa-2x fa-smile-o"></i></span>
+									</header>
+									<a href="#main" class="button alt">Start Here</a>
+								</section>			
+							</div>
+						</div>
+
+				</div>
+			</div>
+         </asp:ContentPlaceHolder>
+
+
+               <asp:ContentPlaceHolder ID="header2" runat="server">
+
+                   	<div id="header">
+				<div class="container">
+						
+					<!-- Logo -->
+						<h1><a href="/Home" id="logo"><img src="Images/logo.PNG" alt="Fashion Hub" /></a></h1>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/Home"><i class="fa fa-home"></i> Home</a></li>
+                                <li><a href="/About"><i class="fa fa-smile-o"></i> About</a></li>
+								<li>
+									<a href="#"><i class="fa fa-shopping-cart"></i> Shop <i class="fa fa-caret-down"></i></a>
+									<ul>
+										<li><a href="/Dresses"><i class="fa fa-check"></i> Dresses</a></li>
+										<li><a href="/Tops"><i class="fa fa-check"></i> Tops</a></li>
+										<li><a href="/Bottoms"><i class="fa fa-check"></i> Bottoms</a></li>
+									</ul>
+								</li>
+								<li><a href="/Contact"><i class="fa fa-phone"></i> Contact</a></li>
+                                <li>
+									<a href="#"><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></a>
+									<ul>
+										<li><a href="/Login"><i class="fa fa-user"></i> Login</a></li>
+                                        <li><a href="/Login?action=logout"><i class="fa fa-backward"></i> LogOut</a></li>
+                                        <li><a href="/Cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                                        <li><a href="/Admin"><i class="fa fa-edit"></i> Admin</a></li>
+									</ul>
+								</li>
+
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+                </asp:ContentPlaceHolder>
+
+               <asp:ContentPlaceHolder ID="body" runat="server">
+
+
+               </asp:ContentPlaceHolder>
+
+		 <asp:ContentPlaceHolder ID="footer1" runat="server">
+             <!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<!-- Copyright -->
+						<div class="copyright">
+							Fashion Hub - Fashion Merchandising Site - ASP.NET Final Project 
+                            <br />Designed By: <a href="#">Sweta Gupta</a> (8252397)
+						</div>
+
+				</div>
+			</div>
+
+
+             </asp:ContentPlaceHolder>
+
+		
+
+
+          </form> 
+   
+
+</body>
+</html>
